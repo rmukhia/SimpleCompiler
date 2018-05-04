@@ -14,16 +14,33 @@ import rcalc.parsers.nonterminals.*;
 /* ------------------------------------------------------------------------------------ */
 
 terminal        Token               PLUS, MINUS, MULTIPLY, DIVIDE, EXP, LPAREN, RPAREN;
-terminal        Token               NUMBER;
+terminal        Token               NUMBER, IDENTIFIER;
+terminal        Token               TYPE;
+terminal        Token               LOGICALOP;
+terminal        Token               BLOCKOPEN, BLOCKCLOSE;
+terminal        Token               DECLOP;
+terminal        Token               ASSIGNOP;
+terminal        Token               IFOP;
+terminal        Token               WHILEOP;
+terminal        Token               ENDSTMT;
 
 non terminal    STARTNode           START;          /* Start Node */
-
+non terminal    STMTBLOCKNode       STMTBLOCK;      /* Statement Block */
+non terminal    STMTLISTNode        STMTLIST;       /* Statement List */
+non terminal    STMTNode            STMT;           /* Statement */
+non terminal    WHILENode           WHILE;          /* While*/
+non terminal    IFELSENode          IFELSE;         /* If Else */
+non terminal    IFNode              IF;             /* If */
+non terminal    DECLNode            DECL;           /* Decleration */
+non terminal    ASSIGNNode          ASSIGN;         /* Assignment */
+non terminal    EXPRNode            EXPR;           /* Expression */
 non terminal    ASTERMNode          ASTERM;         /* Addition Subtraction Term */
 non terminal    MDTERMNode          MDTERM;         /* Multiplication Division Term */
 non terminal    TERMNode            TERM;           /* Term */
 non terminal    FACTORNode          FACTOR;         /* Factor */
 non terminal    PTERMNode           PTERM;          /* Parenthesis term */
 non terminal    NUMNode             NUM;            /* Number */
+non terminal    IDNode              ID;             /* Identifier Node */
 
 
 start with START;
@@ -32,7 +49,54 @@ start with START;
 /* Grammar rules                                                                        */
 /* ------------------------------------------------------------------------------------ */
 
-START   ::= ASTERM:l {: RESULT = new STARTNode(l); :};
+START   ::= STMTLIST:l {: RESULT = new STARTNode(l); :};
+
+STMTBLOCK   ::= BLOCKOPEN:l  STMTLIST:m BLOCKCLOSE:r
+            {: RESULT = new STMTBLOCKNode(new BlockOpenNode(l), m, new BlockCloseNode(r)); :};
+
+STMTLIST ::= STMTLIST:l STMT:m
+            {: RESULT = new STMTLISTNode(l, m); :}
+           | STMT:l
+            {: RESULT = new STMTLISTNode(l); :};
+
+STMT    ::= DECL:l ENDSTMT:m
+            {: RESULT = new STMTNode(l, new EndStmtNode(m)); :}
+          | ASSIGN:l ENDSTMT:m
+            {: RESULT = new STMTNode(l, new EndStmtNode(m)); :}
+          | WHILE:l ENDSTMT:m
+            {: RESULT = new STMTNode(l, new EndStmtNode(m)); :}
+          | IF:l ENDSTMT:m
+            {: RESULT = new STMTNode(l, new EndStmtNode(m)); :}
+          | IFELSE:l ENDSTMT:m
+            {: RESULT = new STMTNode(l, new EndStmtNode(m)); :};
+
+WHILE   ::= EXPR:l WHILEOP:m STMTBLOCK:r
+            {: RESULT = new WHILENode(l, new WhileOpNode(m), r); :};
+
+IFELSE  ::= IF:l IFOP:m IFOP:r STMTBLOCK:rr
+            {: RESULT = new IFELSENode(l, new IfOpNode(m), new IfOpNode(r), rr); :};
+
+IF      ::= EXPR:l IFOP:m STMTBLOCK:r
+            {: RESULT = new IFNode(l, new IfOpNode(m), r); :};
+
+
+
+/* TODO: Composite types */
+DECL    ::= ID:l DECLOP:m TYPE:r
+            {: RESULT = new DECLNode(l, new DeclOpNode(m), new TypeNode(r)); :}
+          | ID:l DECLOP:m TYPE:r NUM:rr
+            {: RESULT = new DECLNode(l, new DeclOpNode(m), new TypeNode(r), rr); :};
+
+ASSIGN  ::= EXPR:l ASSIGNOP:m ID:r
+            {: RESULT = new ASSIGNNode(l, new AssignOpNode(m), r); :};
+
+/* ------------------------------------------------------------------------------------ */
+/* Expressions                                                                          */
+/* ------------------------------------------------------------------------------------ */
+EXPR        ::= EXPR:l LOGICALOP:m ASTERM:r
+                    {: RESULT = new EXPRNode(l, new LogicalOpNode(m), r); :}
+              | ASTERM:m
+                    {: RESULT = new EXPRNode(m); :};
 
 ASTERM      ::= ASTERM:l PLUS:m MDTERM:r
                     {: RESULT = new ASTERMNode(l, new PlusNode(m), r); :}
@@ -66,3 +130,5 @@ PTERM       ::= LPAREN:l ASTERM:m RPAREN:r
 NUM         ::= NUMBER:l
                     {: RESULT = new NUMNode(new NumberNode(l)); :};
 
+ID          ::= IDENTIFIER:l
+                    {: RESULT = new IDNode(new IdentifierNode(l)); :};

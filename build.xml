@@ -8,7 +8,7 @@
   <property name="skip.tests" value="true"/>
    -->
   
-  <!-- Compiler options -->
+  <!-- SimpleCompiler options -->
   
   <property name="compiler.debug" value="on"/>
   <property name="compiler.generate.no.warnings" value="off"/>
@@ -94,7 +94,7 @@
   
   
   <!-- Application Server Libraries -->
-  <!-- Register Custom Compiler Taskdefs -->
+  <!-- Register Custom SimpleCompiler Taskdefs -->
   <property name="javac2.home" value="${idea.home}/lib"/>
   <path id="javac2.classpath">
     <pathelement location="${javac2.home}/javac2.jar"/>
@@ -110,7 +110,7 @@
   <!-- Modules -->
   
   
-  <!-- Module Compiler -->
+  <!-- Module SimpleCompiler -->
   
   <dirname property="module.compiler.basedir" file="${ant.file}"/>
   
