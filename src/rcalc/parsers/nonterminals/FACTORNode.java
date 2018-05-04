@@ -2,6 +2,7 @@ package rcalc.parsers.nonterminals;
 
 import rcalc.parsers.ParseNode;
 import rcalc.parsers.terminals.MinusNode;
+import rcalc.semantic.EvaluateExpr;
 
 public class FACTORNode extends ParseNode{
     public FACTORNode(MinusNode n1, FACTORNode n2) {
@@ -26,4 +27,19 @@ public class FACTORNode extends ParseNode{
         /* Prefix Parser production */
         /* FACTOR -> NUM */
     }
+
+    public FACTORNode(IDNode n1) {
+        super(n1, null, null);
+        setProductionId(50);
+    }
+
+    @Override
+    public void processNode() throws Exception{
+        super.processNode();
+        setVal(EvaluateExpr.evaluate(this, getProductionId()));
+    }
+
+
+
+
 }

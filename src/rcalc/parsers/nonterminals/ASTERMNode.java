@@ -3,6 +3,7 @@ package rcalc.parsers.nonterminals;
 import rcalc.parsers.ParseNode;
 import rcalc.parsers.terminals.MinusNode;
 import rcalc.parsers.terminals.PlusNode;
+import rcalc.semantic.EvaluateExpr;
 
 public class ASTERMNode extends ParseNode{
     public ASTERMNode(ASTERMNode n1,PlusNode n2,  MDTERMNode n3) {
@@ -24,5 +25,11 @@ public class ASTERMNode extends ParseNode{
        setProductionId(16);
         /* Infix Parser production */
         /* ASTERM -> MDTERM */
+    }
+
+    @Override
+    public void processNode() throws Exception{
+        super.processNode();
+        setVal(EvaluateExpr.evaluate(this, getProductionId()));
     }
 }

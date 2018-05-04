@@ -2,6 +2,7 @@ package rcalc.parsers.nonterminals;
 
 import rcalc.parsers.ParseNode;
 import rcalc.parsers.terminals.*;
+import rcalc.semantic.EvaluateExpr;
 
 public class TERMNode extends ParseNode {
 
@@ -74,5 +75,12 @@ public class TERMNode extends ParseNode {
         /* Prefix Parser production */
         /* TERM -> ( TERM - ) */
         /* TERM -> ( - TERM ) */
+    }
+
+
+    @Override
+    public void processNode() throws Exception{
+        super.processNode();
+        setVal(EvaluateExpr.evaluate(this, getProductionId()));
     }
 }

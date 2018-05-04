@@ -16,20 +16,6 @@ public abstract class TerminalNode extends ParseNode{
         colNum = token.getColNum();
     }
 
-    public String toInfix() {
-        setInfixExpr(getLexVal());
-        return getPrefixExpr();
-    }
-
-    public String toPrefix() {
-        setPrefixExpr(getLexVal());
-        return getPrefixExpr();
-    }
-
-    public String toPostfix() {
-        setPostfixExpr(getLexVal());
-        return getPrefixExpr();
-    }
     public double evaluate() {
         return getVal();
     }
@@ -45,5 +31,4 @@ public abstract class TerminalNode extends ParseNode{
     public Token getToken() {
         return token;
     }
-
 }

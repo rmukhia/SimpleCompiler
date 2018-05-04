@@ -9,6 +9,6 @@ import rcalc.parsers.terminals.MultiplyNode;
 public class STMTBLOCKNode extends ParseNode {
     public STMTBLOCKNode(BlockOpenNode n1, STMTLISTNode n2, BlockCloseNode n3) {
         super(n1, n2, n3);
-        setProductionId(17);
+        setProductionId(65);
     }
 }

@@ -122,6 +122,8 @@ FACTOR      ::=  MINUS:m FACTOR:r
               | PTERM:l
                     {: RESULT = new FACTORNode(l); :}
               | NUM:l
+                    {: RESULT = new FACTORNode(l); :}
+              | ID:l
                     {: RESULT = new FACTORNode(l); :};
 
 PTERM       ::= LPAREN:l ASTERM:m RPAREN:r

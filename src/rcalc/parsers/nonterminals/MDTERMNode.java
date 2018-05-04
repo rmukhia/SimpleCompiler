@@ -3,6 +3,7 @@ package rcalc.parsers.nonterminals;
 import rcalc.parsers.ParseNode;
 import rcalc.parsers.terminals.DivideNode;
 import rcalc.parsers.terminals.MultiplyNode;
+import rcalc.semantic.EvaluateExpr;
 
 public class MDTERMNode extends ParseNode {
     public MDTERMNode(MDTERMNode n1, MultiplyNode n2, TERMNode n3) {
@@ -25,5 +26,12 @@ public class MDTERMNode extends ParseNode {
         setProductionId(19);
         /* Infix Parser production */
         /* MDTERM -> TERM */
+    }
+
+
+    @Override
+    public void processNode() throws Exception{
+        super.processNode();
+        setVal(EvaluateExpr.evaluate(this, getProductionId()));
     }
 }

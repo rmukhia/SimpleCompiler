@@ -14,7 +14,8 @@ public class Main {
             reader = new FileReader(args[0]);
             SimpleCompiler compiler = new SimpleCompiler(reader);
             ParseNode start = compiler.parse();
-            System.out.println("Hello");
+            start.compute();
+            System.out.println("Hello world");
         } catch (Exception e) {
             e.printStackTrace();
         }
