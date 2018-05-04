@@ -1,0 +1,68 @@
+/* ------------------------------------------------------------------------------------ */
+/* User code                                                                            */
+/* ------------------------------------------------------------------------------------ */
+
+package rcalc.parsers;
+
+import rcalc.lexer.Token;
+import rcalc.parsers.terminals.*;
+import rcalc.parsers.nonterminals.*;
+
+
+/* ------------------------------------------------------------------------------------ */
+/* Grammar symbol declarations                                                          */
+/* ------------------------------------------------------------------------------------ */
+
+terminal        Token               PLUS, MINUS, MULTIPLY, DIVIDE, EXP, LPAREN, RPAREN;
+terminal        Token               NUMBER;
+
+non terminal    STARTNode           START;          /* Start Node */
+
+non terminal    ASTERMNode          ASTERM;         /* Addition Subtraction Term */
+non terminal    MDTERMNode          MDTERM;         /* Multiplication Division Term */
+non terminal    TERMNode            TERM;           /* Term */
+non terminal    FACTORNode          FACTOR;         /* Factor */
+non terminal    PTERMNode           PTERM;          /* Parenthesis term */
+non terminal    NUMNode             NUM;            /* Number */
+
+
+start with START;
+
+/* ------------------------------------------------------------------------------------ */
+/* Grammar rules                                                                        */
+/* ------------------------------------------------------------------------------------ */
+
+START   ::= ASTERM:l {: RESULT = new STARTNode(l); :};
+
+ASTERM      ::= ASTERM:l PLUS:m MDTERM:r
+                    {: RESULT = new ASTERMNode(l, new PlusNode(m), r); :}
+              | ASTERM:l MINUS:m MDTERM:r
+                    {: RESULT = new ASTERMNode(l, new MinusNode(m),  r); :}
+              | MDTERM:m
+                    {: RESULT = new ASTERMNode(m); :};
+
+MDTERM      ::= MDTERM:l MULTIPLY:m TERM:r
+                    {: RESULT = new MDTERMNode(l, new MultiplyNode(m), r); :}
+              | MDTERM:l DIVIDE:m TERM:r
+                    {: RESULT = new MDTERMNode(l, new DivideNode(m), r); :}
+              | TERM:l
+                    {: RESULT = new MDTERMNode(l); :};
+
+TERM        ::= TERM:l EXP:m FACTOR:r
+                    {: RESULT = new TERMNode( l, new ExponentNode(m), r); :}
+              | FACTOR:l
+                    {: RESULT = new TERMNode(l); :};
+
+FACTOR      ::=  MINUS:m FACTOR:r
+                    {: RESULT = new FACTORNode(new MinusNode(m), r); :}
+              | PTERM:l
+                    {: RESULT = new FACTORNode(l); :}
+              | NUM:l
+                    {: RESULT = new FACTORNode(l); :};
+
+PTERM       ::= LPAREN:l ASTERM:m RPAREN:r
+                    {: RESULT = new PTERMNode(new LParenNode(l), m, new RParenNode(r)); :};
+
+NUM         ::= NUMBER:l
+                    {: RESULT = new NUMNode(new NumberNode(l)); :};
+
