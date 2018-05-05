@@ -18,6 +18,7 @@ public class FUNCNode extends ParseNode {
 
     @Override
     public void compute() throws Exception {
+        //getChildren().get(1);
         String id = getChildren().get(1).getLexVal();
         SimpleCompiler.globalSymbolTable.add(id, new SymbolTableRow(this));
         if (getProductionId() == 1) {

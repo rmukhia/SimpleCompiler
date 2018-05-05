@@ -40,9 +40,11 @@ public class TERMNode extends ParseNode {
                     type = Types.REAL;
                     dval = termNode.ival * Math.pow(10.0, factorNode.dval);
                 }
-                else {
+                else if (termNode.getType() == Types.INT && factorNode.getType() == Types.INT){
                     type = Types.INT;
                     ival = termNode.ival * (int)Math.pow(10.0, factorNode.ival);
+                } else {
+                    throw new Exception("Invalid operation for boolean and character type!");
                 }
             }
             break;
@@ -51,8 +53,12 @@ public class TERMNode extends ParseNode {
                 FACTORNode factorNode = (FACTORNode)getChildren().get(0);
                 if(factorNode.getType() == Types.INT)
                     ival = factorNode.ival;
-                else
+                else if (factorNode.getType() == Types.REAL)
                     dval = factorNode.dval;
+                else if (factorNode.getType() == Types.BOOL)
+                    bval = factorNode.bval;
+                else
+                    cval = factorNode.cval;
                 type = factorNode.getType();
                 break;
             }

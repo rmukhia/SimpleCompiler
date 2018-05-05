@@ -50,6 +50,11 @@ public class ASTERMNode extends ParseNode{
 
                     type = Types.REAL;
                 }
+
+                if (mdtermNode.getType() == Types.CHAR || mdtermNode.getType() == Types.BOOL
+                        || termNode.getType() == Types.CHAR || termNode.getType() == Types.BOOL) {
+                    throw new Exception("Invalid operation for char/bool!");
+                }
             }
             break;
             case 2: {
@@ -71,14 +76,24 @@ public class ASTERMNode extends ParseNode{
 
                     type = Types.REAL;
                 }
+
+                if (mdtermNode.getType() == Types.CHAR || mdtermNode.getType() == Types.BOOL
+                        || termNode.getType() == Types.CHAR || termNode.getType() == Types.BOOL) {
+                    throw new Exception("Invalid operation for char/bool!");
+                }
             }
             break;
             case 3: {
                 MDTERMNode termNode = (MDTERMNode) getChildren().get(0);
                 if (termNode.getType() == Types.INT)
                     ival = termNode.ival;
-                else
+                else if (termNode.getType() == Types.REAL)
                     dval = termNode.dval;
+                else if(termNode.getType() == Types.BOOL)
+                    bval = termNode.bval;
+                else
+                    cval = termNode.cval;
+
 
                 type = termNode.getType();
             }

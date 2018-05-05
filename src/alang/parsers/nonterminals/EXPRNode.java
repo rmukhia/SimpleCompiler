@@ -99,6 +99,10 @@ public class EXPRNode extends ParseNode {
                 ASTERMNode astermNode = (ASTERMNode)getChildren().get(0);
                 if (astermNode.getType() == Types.INT)
                     ival = astermNode.ival;
+                else if (astermNode.getType() == Types.CHAR)
+                    cval = astermNode.cval;
+                else if (astermNode.getType() == Types.BOOL)
+                    bval = astermNode.bval;
                 else
                     dval = astermNode.dval;
                 type = astermNode.getType();

@@ -5,10 +5,14 @@ a:int 3;
 5 => a#2;
 
 {
-    c + d => c;
-    %% c;
-} => func1(c:int, d:int);
+    
+    %% 2;
+} => func1;
 
-func1(a#1,a#2);
+func1();
 
+t:char;
+"a" => t;
+%% t;
 
+%% 2;

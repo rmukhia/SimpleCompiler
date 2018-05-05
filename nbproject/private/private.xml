@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/neha/plc/Project/SimpleCompiler/src/alang/parsers/nonterminals/FUNCNode.java</file>
+            <file>file:/home/neha/plc/Project/SimpleCompiler/src/ui/Main.java</file>
+            <file>file:/home/neha/plc/Project/SimpleCompiler/src/alang/parsers/nonterminals/PRINTNode.java</file>
+            <file>file:/home/neha/plc/Project/SimpleCompiler/src/alang/parsers/Parser.cup</file>
+            <file>file:/home/neha/plc/Project/SimpleCompiler/src/alang/parsers/terminals/CharacterNode.java</file>
+        </group>
     </open-files>
 </project-private>

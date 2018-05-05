@@ -6,7 +6,7 @@ import alang.semantic.Types;
 public class CharacterNode extends TerminalNode {
     public CharacterNode(Token token) {
         super(token,null, null, null);
-        ival = token.getLexVal().charAt(1);
+        cval = token.getLexVal().charAt(1);
         type = Types.CHAR;
     }
 }

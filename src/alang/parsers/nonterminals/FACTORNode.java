@@ -40,14 +40,20 @@ public class FACTORNode extends ParseNode{
             case 1:
                 if (getChildren().get(1).type == Types.INT) {
                     ival = 0 - getChildren().get(1).ival;
-                } else {
+                } else if (getChildren().get(1).type == Types.REAL){
                     dval = 0.0 - getChildren().get(1).dval;
+                } else {
+                    throw new Exception("Only int and real can be negated.");
                 }
                 type = getChildren().get(1).getType();
                 break;
             case 2:
                 if (getChildren().get(0).type == Types.INT) {
                     ival = getChildren().get(0).ival;
+                } else if (getChildren().get(0).type == Types.CHAR) {
+                    cval = getChildren().get(0).cval;
+                } else if (getChildren().get(0).type == Types.BOOL) {
+                    bval = getChildren().get(0).bval;
                 } else {
                     dval = getChildren().get(0).dval;
                 }
