@@ -1,5 +1,6 @@
 out
-
 *.java~
-
 *.swp
+/build/
+
+/dist/

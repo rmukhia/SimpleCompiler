@@ -5,17 +5,17 @@
   </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="RCalc" />
+      <artifact name="ALang:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f34143e1-70fc-4b02-a274-095d3956210a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ALang_jar.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ALang.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/sample.inp" afterPath="$PROJECT_DIR$/sample.inp" />
-      <change beforePath="$PROJECT_DIR$/src/alang/parsers/Parser.cup" afterPath="$PROJECT_DIR$/src/alang/parsers/Parser.cup" />
-      <change beforePath="$PROJECT_DIR$/src/alang/parsers/Parser.java" afterPath="$PROJECT_DIR$/src/alang/parsers/Parser.java" />
-      <change beforePath="$PROJECT_DIR$/src/alang/parsers/nonterminals/FUNCNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/FUNCNode.java" />
-      <change beforePath="$PROJECT_DIR$/src/alang/parsers/sym.java" afterPath="$PROJECT_DIR$/src/alang/parsers/sym.java" />
+      <change beforePath="$PROJECT_DIR$/Calculator.iml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,64 +26,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/RCalc$Main.coverage" NAME="Main Coverage Results" MODIFIED="1525464403199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/RCalc$Main_Cache.coverage" NAME="Main Cache Coverage Results" MODIFIED="1525512394109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ui.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/RCalc$Main_Cache.coverage" NAME="Main Cache Coverage Results" MODIFIED="1525512394109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/RCalc$Main.coverage" NAME="Main Coverage Results" MODIFIED="1525464403199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ui.*</FILTER>
     </SUITE>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sample.inp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sample.inp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sample.inp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="40">
+              <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lexer.jflex" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/alang/lexer/Lexer.jflex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="74" column="96" lean-forward="false" selection-start-line="74" selection-start-column="96" selection-end-line="74" selection-end-column="96" />
-              <folding>
-                <marker date="1525517685927" expanded="true" signature="101:172" ph="..." />
-                <marker date="1525517685927" expanded="true" signature="378:385" ph=" { " />
-                <marker date="1525517685927" expanded="true" signature="427:431" ph=" }" />
-                <marker date="1525517685927" expanded="true" signature="480:487" ph=" { " />
-                <marker date="1525517685927" expanded="true" signature="536:540" ph=" }" />
-                <marker date="1525517685927" expanded="true" signature="985:1054" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="1077:1147" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="1170:1243" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="1266:1337" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="1360:1428" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="1451:1522" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="1545:1616" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="1640:1713" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="1736:1810" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="1834:1905" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="1928:1999" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="2022:2094" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="2117:2190" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="2213:2282" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="2305:2377" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="2401:2473" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="2496:2570" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="2594:2665" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="2688:2760" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="2783:2855" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="2878:2947" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="2950:2961" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="2971:3044" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="3079:3148" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="3172:3247" ph="{...}" />
-                <marker date="1525517685927" expanded="true" signature="3319:3363" ph="{}" />
-                <marker date="1525517685927" expanded="true" signature="3535:3589" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -91,28 +48,48 @@
       <file leaf-file-name="DECLNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/DECLNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1010">
-              <caret line="83" column="21" lean-forward="false" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+            <state relative-caret-position="440">
+              <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compile.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/compile.sh">
+      <file leaf-file-name="IFELSENode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/IFELSENode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            <state relative-caret-position="160">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/alang/lexer/Lexer.java">
+      <file leaf-file-name="IFNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/IFNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            <state relative-caret-position="200">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WHILENode.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/WHILENode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DECLLISTNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/DECLLISTNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,7 +98,7 @@
       <file leaf-file-name="Parser.cup" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/alang/parsers/Parser.cup">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
+            <state relative-caret-position="2120">
               <caret line="106" column="70" lean-forward="false" selection-start-line="106" selection-start-column="70" selection-end-line="106" selection-end-column="70" />
               <folding />
             </state>
@@ -131,7 +108,7 @@
       <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/alang/parsers/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
+            <state relative-caret-position="16080">
               <caret line="814" column="34" lean-forward="false" selection-start-line="814" selection-start-column="34" selection-end-line="814" selection-end-column="34" />
               <folding />
             </state>
@@ -141,7 +118,7 @@
       <file leaf-file-name="FUNCNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/FUNCNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="100">
               <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
               <folding />
             </state>
@@ -151,18 +128,8 @@
       <file leaf-file-name="ASSIGNNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/ASSIGNNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
+            <state relative-caret-position="1180">
               <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IDNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/IDNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -220,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/rcalc/parsers/terminals/EndStmtNode.java" />
         <option value="$PROJECT_DIR$/src/rcalc/lexer/Lexer.java" />
         <option value="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/STARTNode.java" />
         <option value="$PROJECT_DIR$/src/rcalc/Compiler.java" />
@@ -271,6 +237,7 @@
         <option value="$PROJECT_DIR$/src/alang/parsers/Parser.cup" />
         <option value="$PROJECT_DIR$/src/alang/parsers/nonterminals/FUNCNode.java" />
         <option value="$PROJECT_DIR$/sample.inp" />
+        <option value="$PROJECT_DIR$/src/alang/parsers/nonterminals/WHILENode.java" />
       </list>
     </option>
   </component>
@@ -280,10 +247,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="777" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1003" />
+    <option name="y" value="38" />
+    <option name="width" value="922" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -311,6 +279,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -355,65 +325,43 @@
         <subPane>
           <expand>
             <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="ALang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleCompiler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="ALang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleCompiler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="alang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="ALang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleCompiler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="alang" type="462c0819:PsiDirectoryNode" />
-              <item name="lexer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="ALang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleCompiler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="alang" type="462c0819:PsiDirectoryNode" />
               <item name="parsers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="ALang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleCompiler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="alang" type="462c0819:PsiDirectoryNode" />
               <item name="parsers" type="462c0819:PsiDirectoryNode" />
               <item name="nonterminals" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="alang" type="462c0819:PsiDirectoryNode" />
-              <item name="semantic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALang" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -459,7 +407,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main Cache">
+  <component name="RunManager" selected="JAR Application.Calculator">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -562,10 +510,20 @@
       <envs />
       <method>
         <option name="RunConfigurationTask" enabled="true" run_configuration_name="compile.sh" run_configuration_type="BashConfigurationType" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="ALang" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Calculator" />
+      <envs />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -666,11 +624,12 @@
       <workItem from="1525422591488" duration="8563000" />
       <workItem from="1525512216089" duration="4231000" />
       <workItem from="1525519037527" duration="476000" />
+      <workItem from="1525520178194" duration="3154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147608000" />
+    <option name="totallyTimeSpent" value="150762000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -682,9 +641,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <frame x="73" y="-5" width="1847" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3548387" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -693,19 +653,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3489736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3489736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25201938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1254902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62463343" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -822,13 +782,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/WhileOpNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/EndStmtNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -876,11 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#333#334#0" expanded="false" />
-            <element signature="e#369#370#0" expanded="false" />
-            <element signature="e#454#455#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -891,14 +839,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="475" column="0" lean-forward="false" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/util/LinkedList.java" />
     <entry file="file://$PROJECT_DIR$/src/alang/semantic/SymbolTableRow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -985,11 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#174#175#0" expanded="false" />
-            <element signature="e#209#210#0" expanded="false" />
-            <element signature="e#251#252#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1011,11 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#258#259#0" expanded="false" />
-            <element signature="e#293#294#0" expanded="false" />
-            <element signature="e#333#334#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1023,14 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/DECLLISTNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,9 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1064,13 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="31" column="70" lean-forward="false" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1079,7 +992,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
             <caret line="2" column="107" lean-forward="false" selection-start-line="2" selection-start-column="107" selection-end-line="2" selection-end-column="107" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1097,15 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/IFNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,14 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/WHILENode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1165,14 +1060,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/IFELSENode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,7 +1073,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/alang/lexer/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="60">
           <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding />
         </state>
@@ -1194,72 +1081,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/compile.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="160">
           <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/DECLNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="83" column="21" lean-forward="false" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/ASSIGNNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/alang/lexer/Lexer.jflex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
+        <state relative-caret-position="1480">
           <caret line="74" column="96" lean-forward="false" selection-start-line="74" selection-start-column="96" selection-end-line="74" selection-end-column="96" />
-          <folding>
-            <marker date="1525517685927" expanded="true" signature="101:172" ph="..." />
-            <marker date="1525517685927" expanded="true" signature="378:385" ph=" { " />
-            <marker date="1525517685927" expanded="true" signature="427:431" ph=" }" />
-            <marker date="1525517685927" expanded="true" signature="480:487" ph=" { " />
-            <marker date="1525517685927" expanded="true" signature="536:540" ph=" }" />
-            <marker date="1525517685927" expanded="true" signature="985:1054" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="1077:1147" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="1170:1243" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="1266:1337" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="1360:1428" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="1451:1522" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="1545:1616" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="1640:1713" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="1736:1810" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="1834:1905" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="1928:1999" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="2022:2094" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="2117:2190" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="2213:2282" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="2305:2377" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="2401:2473" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="2496:2570" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="2594:2665" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="2688:2760" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="2783:2855" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="2878:2947" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="2950:2961" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="2971:3044" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="3079:3148" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="3172:3247" ph="{...}" />
-            <marker date="1525517685927" expanded="true" signature="3319:3363" ph="{}" />
-            <marker date="1525517685927" expanded="true" signature="3535:3589" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/IDNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="440">
           <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding />
         </state>
@@ -1267,7 +1105,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/alang/parsers/Parser.cup">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
+        <state relative-caret-position="2120">
           <caret line="106" column="70" lean-forward="false" selection-start-line="106" selection-start-column="70" selection-end-line="106" selection-end-column="70" />
           <folding />
         </state>
@@ -1275,7 +1113,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/alang/parsers/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
+        <state relative-caret-position="16080">
           <caret line="814" column="34" lean-forward="false" selection-start-line="814" selection-start-column="34" selection-end-line="814" selection-end-column="34" />
           <folding />
         </state>
@@ -1283,16 +1121,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/FUNCNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="100">
           <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample.inp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="40">
+          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/ASSIGNNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1180">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/DECLLISTNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/DECLNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/IFELSENode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/IFNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/WHILENode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1303,7 +1197,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>ALang</last-edited>
+          <last-edited>ALang:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1352,11 +1246,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Calculator</last-edited>
+          <last-edited>ALang</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

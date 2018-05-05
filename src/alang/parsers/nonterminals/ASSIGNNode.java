@@ -8,7 +8,6 @@ import alang.parsers.terminals.LogicalOpNode;
 import alang.parsers.terminals.MultiplyNode;
 import alang.semantic.SymbolTableRow;
 import alang.semantic.Types;
-import com.sun.xml.internal.bind.v2.model.core.ID;
 
 public class ASSIGNNode extends ParseNode {
     public ASSIGNNode(EXPRNode n1, AssignOpNode n2, IDNode n3) {

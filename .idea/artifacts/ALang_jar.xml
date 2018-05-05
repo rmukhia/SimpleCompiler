@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ALang:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ALang_jar</output-path>
+    <root id="archive" name="ALang.jar">
+      <element id="module-output" name="ALang" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vendor/jflex-1.6.1/lib/java-cup-11a.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/vendor/jflex-1.6.1/lib/jflex-1.6.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
