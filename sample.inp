@@ -1,16 +1,15 @@
-{
-    %% c;
-    %% d;
-    %% f;
-} => print(c:real, d:int, f:int);
+a:int 3;
+
+3 => a#0;
+4 => a#1;
+5 => a#2;
+%% a#1;
+%% a#0;
+%% a#2;
 
 
-a:real;
-5=>a;
-b:int;
-10=>b;
-g:int;
-11=>g;
-k:int;
-9=>k;
-print(a,b,k);
+d:bool;
+a#2 + a#1=> d;
+%% d;
+
+

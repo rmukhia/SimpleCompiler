@@ -1,8 +1,8 @@
 /* --------------------------Usercode Section------------------------ */
-package rcalc.lexer;
+package alang.lexer;
 import java_cup.runtime.*;
-import rcalc.parsers.sym;
-import rcalc.lexer.Token;
+import alang.parsers.sym;
+import alang.lexer.Token;
 
 %%
 
@@ -53,6 +53,7 @@ types           = "int" | "real" | "bool" | "char"
 "{"                 { return symbol(sym.BLOCKOPEN, new Token(yytext(), yyline +1, yycolumn)); }
 "}"                 { return symbol(sym.BLOCKCLOSE, new Token(yytext(), yyline +1, yycolumn)); }
 
+"#"                 { return symbol(sym.INDEXOP, new Token(yytext(), yyline +1, yycolumn)); }
 ":"                 { return symbol(sym.DECLOP, new Token(yytext(), yyline + 1, yycolumn)); }
 ";"                 { return symbol(sym.ENDSTMT, new Token(yytext(), yyline + 1, yycolumn)); }
 "=>"                { return symbol(sym.ASSIGNOP, new Token(yytext(), yyline + 1, yycolumn)); }

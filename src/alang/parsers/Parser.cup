@@ -20,6 +20,7 @@ terminal        Token               LOGICALOP;
 terminal        Token               BLOCKOPEN, BLOCKCLOSE;
 terminal        Token               DECLOP;
 terminal        Token               ASSIGNOP;
+terminal        Token               INDEXOP;
 terminal        Token               IFOP;
 terminal        Token               WHILEOP;
 terminal        Token               ENDSTMT;
@@ -126,12 +127,12 @@ DECLLIST    ::= DECLLIST:l SEPERATOR:m DECL:r
                     {: RESULT = new DECLLISTNode(l); :};
 
 /* TODO: Composite types */
-DECL        ::= ID:l DECLOP:m TYPE:r
-                    {: RESULT = new DECLNode(l, new DeclOpNode(m), new TypeNode(r)); :}
-              | ID:l DECLOP:m TYPE:r NUM:rr
-                    {: RESULT = new DECLNode(l, new DeclOpNode(m), new TypeNode(r), rr); :}
-              | ID:l DECLOP:m LPAREN:r DECLLIST:rr RPAREN:rrr
-                    {: RESULT = new DECLNode(l, rr); :};
+DECL        ::= IDENTIFIER:l DECLOP:m TYPE:r
+                    {: RESULT = new DECLNode(new IdentifierNode(l), new DeclOpNode(m), new TypeNode(r)); :}
+              | IDENTIFIER:l DECLOP:m TYPE:r NUM:rr
+                    {: RESULT = new DECLNode(new IdentifierNode(l), new DeclOpNode(m), new TypeNode(r), rr); :}
+              | IDENTIFIER:l DECLOP:m LPAREN:r DECLLIST:rr RPAREN:rrr
+                    {: RESULT = new DECLNode(new IdentifierNode(l), rr); :};
 
 ASSIGN      ::= EXPR:l ASSIGNOP:m ID:r
                     {: RESULT = new ASSIGNNode(l, new AssignOpNode(m), r); :};
@@ -187,4 +188,6 @@ NUM         ::= REALNUM:l
                     {: RESULT = new NUMNode(new IntNumNode(l)); :};
 
 ID          ::= IDENTIFIER:l
-                    {: RESULT = new IDNode(new IdentifierNode(l)); :};
+                    {: RESULT = new IDNode(new IdentifierNode(l)); :}
+              | IDENTIFIER:l INDEXOP:m NUM:r
+                    {: RESULT = new IDNode(new IdentifierNode(l), r); :};
