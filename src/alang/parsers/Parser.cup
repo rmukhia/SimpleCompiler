@@ -103,8 +103,8 @@ PARAMLIST   ::= PARAMLIST:l SEPERATOR:m PARAM:r
 PARAM       ::= EXPR:l
                 {: RESULT = new PARAMNode(l); :};
 
-FUNC        ::= STMTBLOCK:l ASSIGNOP:m ID:r LPAREN:lp DECLLIST:rr RPAREN:rp
-                    {: RESULT = new FUNCNode(l, r, rr); :}
+FUNC        ::= STMTBLOCK:l ASSIGNOP:m IDENTIFIER:r LPAREN:lp DECLLIST:rr RPAREN:rp
+                    {: RESULT = new FUNCNode(l, new IdentifierNode(r), rr); :}
               | STMTBLOCK:l ASSIGNOP:m ID:r
                     {: RESULT = new FUNCNode(l, r); :};
 

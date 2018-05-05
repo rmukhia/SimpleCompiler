@@ -2,10 +2,11 @@ package alang.parsers.nonterminals;
 
 import alang.SimpleCompiler;
 import alang.parsers.ParseNode;
+import alang.parsers.terminals.IdentifierNode;
 import alang.semantic.SymbolTableRow;
 
 public class FUNCNode extends ParseNode {
-    public FUNCNode(STMTBLOCKNode n1, IDNode n2, DECLLISTNode n3) {
+    public FUNCNode(STMTBLOCKNode n1, IdentifierNode n2, DECLLISTNode n3) {
         super(n1, n2, n3);
         setProductionId(1);
     }
