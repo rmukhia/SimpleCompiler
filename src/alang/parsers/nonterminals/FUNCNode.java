@@ -11,14 +11,13 @@ public class FUNCNode extends ParseNode {
         setProductionId(1);
     }
 
-    public FUNCNode(STMTBLOCKNode n1, IDNode n2) {
+    public FUNCNode(STMTBLOCKNode n1, IdentifierNode n2) {
         super(n1, n2, null);
         setProductionId(2);
     }
 
     @Override
     public void compute() throws Exception {
-        getChildren().get(1).compute();
         String id = getChildren().get(1).getLexVal();
         SimpleCompiler.globalSymbolTable.add(id, new SymbolTableRow(this));
         if (getProductionId() == 1) {

@@ -105,8 +105,8 @@ PARAM       ::= EXPR:l
 
 FUNC        ::= STMTBLOCK:l ASSIGNOP:m IDENTIFIER:r LPAREN:lp DECLLIST:rr RPAREN:rp
                     {: RESULT = new FUNCNode(l, new IdentifierNode(r), rr); :}
-              | STMTBLOCK:l ASSIGNOP:m ID:r
-                    {: RESULT = new FUNCNode(l, r); :};
+              | STMTBLOCK:l ASSIGNOP:m IDENTIFIER:r
+                    {: RESULT = new FUNCNode(l, new IdentifierNode(r)); :};
 
 PRINT       ::= PRINTOP:l EXPR:m
                     {: RESULT = new PRINTNode(m); :};
