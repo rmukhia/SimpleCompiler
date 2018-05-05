@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="rcalc" default="all">
+<project name="alang" default="all">
   
   
   <property file="build.properties"/>
@@ -212,17 +212,17 @@
   
   <target name="init.artifacts">
     <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
-    <property name="artifact.output.rcalc" value="${basedir}/out/artifacts/RCalc"/>
+    <property name="artifact.output.alang" value="${basedir}/out/artifacts/RCalc"/>
     <mkdir dir="${artifacts.temp.dir}"/>
     <property name="artifact.temp.output.Calculator" value="${artifacts.temp.dir}/Calculator.jar"/>
     <taskdef resource="com/sun/javafx/tools/ant/antlib.xml" uri="javafx:com.sun.javafx.tools.ant" classpath="${jdk.home.1.8}/lib/ant-javafx.jar"/>
   </target>
   
-  <target name="clean.artifact.rcalc" description="clean RCalc artifact output">
+  <target name="clean.artifact.alang" description="clean RCalc artifact output">
     <delete dir="${artifact.output.rcalc}"/>
   </target>
   
-  <target name="artifact.rcalc" depends="init.artifacts, compile.module.compiler" description="Build &#39;RCalc&#39; artifact" xmlns:fx="javafx:com.sun.javafx.tools.ant">
+  <target name="artifact.alang" depends="init.artifacts, compile.module.compiler" description="Build &#39;RCalc&#39; artifact" xmlns:fx="javafx:com.sun.javafx.tools.ant">
     <mkdir dir="${artifact.output.rcalc}"/>
     <copy todir="${artifact.temp.output.Calculator}">
       <fileset dir="${compiler.output.dir}"/>

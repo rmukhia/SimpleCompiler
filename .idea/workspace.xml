@@ -10,9 +10,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f34143e1-70fc-4b02-a274-095d3956210a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RCalc.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ALang.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change beforePath="$PROJECT_DIR$/sample.inp" afterPath="$PROJECT_DIR$/sample.inp" />
-      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/ASSIGNNode.java" afterPath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/ASSIGNNode.java" />
-      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/FUNCCALLNode.java" afterPath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/FUNCCALLNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/SimpleCompiler.java" afterPath="$PROJECT_DIR$/src/alang/SimpleCompiler.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/lexer/Lexer.java" afterPath="$PROJECT_DIR$/src/alang/lexer/Lexer.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/lexer/Lexer.jflex" afterPath="$PROJECT_DIR$/src/alang/lexer/Lexer.jflex" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/lexer/Token.java" afterPath="$PROJECT_DIR$/src/alang/lexer/Token.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/ParseNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/ParseNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/Parser.cup" afterPath="$PROJECT_DIR$/src/alang/parsers/Parser.cup" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/Parser.java" afterPath="$PROJECT_DIR$/src/alang/parsers/Parser.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/ASSIGNNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/ASSIGNNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/ASTERMNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/ASTERMNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/DECLLISTNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/DECLLISTNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/DECLNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/DECLNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/EXPRNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/EXPRNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/FACTORNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/FACTORNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/FUNCCALLNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/FUNCCALLNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/FUNCNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/FUNCNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/IDNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/IDNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/IFELSENode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/IFELSENode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/IFNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/IFNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/MDTERMNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/MDTERMNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/NUMNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/NUMNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/PARAMLISTNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/PARAMLISTNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/PARAMNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/PARAMNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/PRINTNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/PRINTNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/PTERMNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/PTERMNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/STARTNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/STARTNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/STMTBLOCKNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/STMTBLOCKNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/STMTLISTNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/STMTLISTNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/STMTNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/STMTNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/TERMNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/TERMNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/WHILENode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/nonterminals/WHILENode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/sym.java" afterPath="$PROJECT_DIR$/src/alang/parsers/sym.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/AssignOpNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/AssignOpNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/BlockCloseNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/BlockCloseNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/BlockOpenNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/BlockOpenNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/BooleanNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/BooleanNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/CharacterNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/CharacterNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/DeclOpNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/DeclOpNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/DivideNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/DivideNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/EndStmtNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/EndStmtNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/ExponentNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/ExponentNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/IdentifierNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/IdentifierNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/IfOpNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/IfOpNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/IntNumNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/IntNumNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/LParenNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/LParenNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/LogicalOpNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/LogicalOpNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/MinusNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/MinusNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/MultiplyNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/MultiplyNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/PlusNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/PlusNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/RParenNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/RParenNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/RealNumNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/RealNumNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/TerminalNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/TerminalNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/TypeNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/TypeNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/parsers/terminals/WhileOpNode.java" afterPath="$PROJECT_DIR$/src/alang/parsers/terminals/WhileOpNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/semantic/SaveType.java" afterPath="$PROJECT_DIR$/src/alang/semantic/SaveType.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/semantic/SymbolTable.java" afterPath="$PROJECT_DIR$/src/alang/semantic/SymbolTable.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/semantic/SymbolTableRow.java" afterPath="$PROJECT_DIR$/src/alang/semantic/SymbolTableRow.java" />
+      <change beforePath="$PROJECT_DIR$/src/rcalc/semantic/Types.java" afterPath="$PROJECT_DIR$/src/alang/semantic/Types.java" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Main.java" afterPath="$PROJECT_DIR$/src/ui/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +94,94 @@
       <file leaf-file-name="sample.inp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sample.inp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="225">
+              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lexer.jflex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alang/lexer/Lexer.jflex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="958">
+              <caret line="66" column="64" lean-forward="false" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
+              <folding>
+                <marker date="1525477795751" expanded="false" signature="101:172" ph="..." />
+                <marker date="1525477795751" expanded="true" signature="378:385" ph=" { " />
+                <marker date="1525477795751" expanded="true" signature="427:431" ph=" }" />
+                <marker date="1525477795751" expanded="true" signature="480:487" ph=" { " />
+                <marker date="1525477795751" expanded="true" signature="536:540" ph=" }" />
+                <marker date="1525477795751" expanded="true" signature="985:1054" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="1077:1147" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="1170:1243" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="1266:1337" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="1360:1428" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="1451:1522" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="1545:1616" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="1640:1713" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="1736:1810" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="1834:1905" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="1928:2000" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2023:2096" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2119:2188" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2211:2283" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2307:2379" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2307:3498" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2402:2476" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2500:2571" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2500:3498" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2594:2666" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2689:2761" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2689:3498" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2784:2853" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2784:3498" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2856:2867" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2877:2950" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="2985:3054" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="3078:3153" ph="{...}" />
+                <marker date="1525477795751" expanded="true" signature="3225:3269" ph="{}" />
+                <marker date="1525477795751" expanded="true" signature="3441:3495" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compile.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compile.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alang/lexer/Lexer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11145">
+              <caret line="763" column="51" lean-forward="false" selection-start-line="763" selection-start-column="51" selection-end-line="763" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.cup" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alang/parsers/Parser.cup">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2775">
+              <caret line="185" column="23" lean-forward="false" selection-start-line="185" selection-start-column="23" selection-end-line="185" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DECLNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/DECLNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="85" column="16" lean-forward="false" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -55,7 +200,7 @@
         </entry>
       </file>
       <file leaf-file-name="ASSIGNNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/ASSIGNNode.java">
+        <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/ASSIGNNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="407">
               <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
@@ -65,7 +210,7 @@
         </entry>
       </file>
       <file leaf-file-name="FUNCCALLNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/FUNCCALLNode.java">
+        <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/FUNCCALLNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="31" column="70" lean-forward="false" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
@@ -80,18 +225,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PRINTNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/PRINTNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ParseNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/ParseNode.java">
+        <entry file="file://$PROJECT_DIR$/src/alang/parsers/ParseNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="229">
               <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
@@ -217,7 +352,6 @@
         <option value="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/STMTBLOCKNode.java" />
         <option value="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/STMTLISTNode.java" />
         <option value="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/STMTNode.java" />
-        <option value="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/DECLNode.java" />
         <option value="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/FUNCNode.java" />
         <option value="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/IDNode.java" />
         <option value="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/IFELSENode.java" />
@@ -227,6 +361,7 @@
         <option value="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/PARAMNode.java" />
         <option value="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/ASSIGNNode.java" />
         <option value="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/FUNCCALLNode.java" />
+        <option value="$PROJECT_DIR$/src/rcalc/parsers/nonterminals/DECLNode.java" />
         <option value="$PROJECT_DIR$/sample.inp" />
       </list>
     </option>
@@ -263,68 +398,6 @@
             <path>
               <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
               <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="rcalc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="rcalc" type="462c0819:PsiDirectoryNode" />
-              <item name="lexer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="rcalc" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="rcalc" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
-              <item name="nonterminals" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="rcalc" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
-              <item name="terminals" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="rcalc" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
-              <item name="Parser.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="rcalc" type="462c0819:PsiDirectoryNode" />
-              <item name="semantic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RCalc" type="b2602c69:ProjectViewProjectNode" />
@@ -536,7 +609,7 @@
       <method>
         <option name="RunConfigurationTask" enabled="true" run_configuration_name="compile.sh" run_configuration_type="BashConfigurationType" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="RCalc" />
+          <artifact name="ALang" />
         </option>
       </method>
     </configuration>
@@ -641,7 +714,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142220000" />
+    <option name="totallyTimeSpent" value="142639000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -773,7 +846,7 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/ASSIGNNode.java</url>
+          <url>file://$PROJECT_DIR$/src/alang/parsers/nonterminals/ASSIGNNode.java</url>
           <line>32</line>
           <properties />
           <option name="timeStamp" value="31" />
@@ -815,7 +888,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/IfOpNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/IfOpNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -823,7 +896,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/WhileOpNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/WhileOpNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -831,7 +904,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/EndStmtNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/EndStmtNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -839,7 +912,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/DeclOpNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/DeclOpNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -847,15 +920,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compile.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="72" lean-forward="false" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/semantic/Types.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/semantic/Types.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
@@ -863,7 +928,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/RParenNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/RParenNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -871,7 +936,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/semantic/SaveType.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/semantic/SaveType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -879,7 +944,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/AssignOpNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/AssignOpNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -887,24 +952,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/semantic/SymbolTable.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/semantic/SymbolTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="false" />
+            <element signature="e#369#370#0" expanded="false" />
+            <element signature="e#454#455#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/MinusNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/MinusNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -917,25 +982,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/semantic/SymbolTableRow.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/semantic/SymbolTableRow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1307#1308#0" expanded="true" />
-            <element signature="e#1522#1523#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1611#1612#0" expanded="true" />
-            <element signature="e#1644#1645#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1275#1276#0" expanded="false" />
+            <element signature="e#1307#1308#0" expanded="false" />
+            <element signature="e#1522#1523#0" expanded="false" />
+            <element signature="e#1549#1550#0" expanded="false" />
+            <element signature="e#1581#1582#0" expanded="false" />
+            <element signature="e#1611#1612#0" expanded="false" />
+            <element signature="e#1644#1645#0" expanded="false" />
+            <element signature="e#1676#1677#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/SimpleCompiler.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/SimpleCompiler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
@@ -943,7 +1008,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/IdentifierNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/IdentifierNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -951,7 +1016,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/TerminalNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/TerminalNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -959,17 +1024,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/RealNumNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/RealNumNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="52" lean-forward="false" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/IntNumNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/IntNumNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
@@ -977,59 +1042,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/lexer/Lexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="763" column="51" lean-forward="false" selection-start-line="763" selection-start-column="51" selection-end-line="763" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/lexer/Lexer.jflex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="66" column="64" lean-forward="false" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
-          <folding>
-            <marker date="1525477795751" expanded="false" signature="101:172" ph="..." />
-            <marker date="1525477795751" expanded="true" signature="378:385" ph=" { " />
-            <marker date="1525477795751" expanded="true" signature="427:431" ph=" }" />
-            <marker date="1525477795751" expanded="true" signature="480:487" ph=" { " />
-            <marker date="1525477795751" expanded="true" signature="536:540" ph=" }" />
-            <marker date="1525477795751" expanded="true" signature="985:1054" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="1077:1147" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="1170:1243" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="1266:1337" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="1360:1428" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="1451:1522" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="1545:1616" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="1640:1713" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="1736:1810" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="1834:1905" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="1928:2000" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2023:2096" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2119:2188" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2211:2283" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2307:2379" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2307:3498" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2402:2476" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2500:2571" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2500:3498" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2594:2666" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2689:2761" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2689:3498" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2784:2853" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2784:3498" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2856:2867" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2877:2950" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="2985:3054" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="3078:3153" ph="{...}" />
-            <marker date="1525477795751" expanded="true" signature="3225:3269" ph="{}" />
-            <marker date="1525477795751" expanded="true" signature="3441:3495" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/Parser.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="519" column="18" lean-forward="false" selection-start-line="519" selection-start-column="18" selection-end-line="519" selection-end-column="18" />
@@ -1037,17 +1050,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/NUMNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/NUMNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/PTERMNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/PTERMNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
@@ -1055,7 +1068,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/MDTERMNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/MDTERMNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-536">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
@@ -1063,15 +1076,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/Parser.cup">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="185" column="23" lean-forward="false" selection-start-line="185" selection-start-column="23" selection-end-line="185" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/BooleanNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/BooleanNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
@@ -1079,7 +1084,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/terminals/CharacterNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/terminals/CharacterNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
@@ -1095,7 +1100,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/ASTERMNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/ASTERMNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-120">
           <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
@@ -1103,19 +1108,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/PARAMLISTNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/PARAMLISTNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="false" />
+            <element signature="e#209#210#0" expanded="false" />
+            <element signature="e#251#252#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/STARTNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/STARTNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -1123,53 +1128,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/STMTBLOCKNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/STMTBLOCKNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/STMTLISTNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/STMTLISTNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="false" />
+            <element signature="e#293#294#0" expanded="false" />
+            <element signature="e#333#334#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/STMTNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/STMTNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="false" />
+            <element signature="e#328#329#0" expanded="false" />
+            <element signature="e#382#383#0" expanded="false" />
+            <element signature="e#417#418#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
+            <element signature="e#505#506#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#590#591#0" expanded="false" />
+            <element signature="e#644#645#0" expanded="false" />
+            <element signature="e#679#680#0" expanded="false" />
+            <element signature="e#732#733#0" expanded="false" />
+            <element signature="e#767#768#0" expanded="false" />
+            <element signature="e#819#820#0" expanded="false" />
+            <element signature="e#854#855#0" expanded="false" />
+            <element signature="e#910#911#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/TERMNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/TERMNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
@@ -1177,15 +1182,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/DECLNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="63" column="17" lean-forward="false" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/DECLLISTNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/DECLLISTNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
@@ -1193,7 +1190,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/EXPRNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/EXPRNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
@@ -1201,7 +1198,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/IDNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/IDNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -1209,7 +1206,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/IFELSENode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/IFELSENode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -1217,18 +1214,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/IFNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/IFNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="false" />
+            <element signature="e#366#367#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/PARAMNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/PARAMNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
@@ -1236,38 +1233,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/WHILENode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/WHILENode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#346#347#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/FUNCNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/FUNCNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/FACTORNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/FACTORNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/PRINTNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/PRINTNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -1275,7 +1272,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/ParseNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/ParseNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
@@ -1318,7 +1315,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/ASSIGNNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/ASSIGNNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
           <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
@@ -1326,7 +1323,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rcalc/parsers/nonterminals/FUNCCALLNode.java">
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/FUNCCALLNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="31" column="70" lean-forward="false" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
@@ -1340,10 +1337,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/nonterminals/DECLNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="85" column="16" lean-forward="false" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alang/parsers/Parser.cup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2775">
+          <caret line="185" column="23" lean-forward="false" selection-start-line="185" selection-start-column="23" selection-end-line="185" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alang/lexer/Lexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11145">
+          <caret line="763" column="51" lean-forward="false" selection-start-line="763" selection-start-column="51" selection-end-line="763" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alang/lexer/Lexer.jflex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="958">
+          <caret line="66" column="64" lean-forward="false" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
+          <folding>
+            <marker date="1525477795751" expanded="false" signature="101:172" ph="..." />
+            <marker date="1525477795751" expanded="true" signature="378:385" ph=" { " />
+            <marker date="1525477795751" expanded="true" signature="427:431" ph=" }" />
+            <marker date="1525477795751" expanded="true" signature="480:487" ph=" { " />
+            <marker date="1525477795751" expanded="true" signature="536:540" ph=" }" />
+            <marker date="1525477795751" expanded="true" signature="985:1054" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="1077:1147" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="1170:1243" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="1266:1337" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="1360:1428" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="1451:1522" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="1545:1616" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="1640:1713" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="1736:1810" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="1834:1905" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="1928:2000" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2023:2096" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2119:2188" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2211:2283" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2307:2379" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2307:3498" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2402:2476" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2500:2571" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2500:3498" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2594:2666" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2689:2761" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2689:3498" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2784:2853" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2784:3498" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2856:2867" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2877:2950" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="2985:3054" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="3078:3153" ph="{...}" />
+            <marker date="1525477795751" expanded="true" signature="3225:3269" ph="{}" />
+            <marker date="1525477795751" expanded="true" signature="3441:3495" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compile.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sample.inp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="225">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1354,7 +1427,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>RCalc</last-edited>
+          <last-edited>ALang</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1408,7 +1481,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

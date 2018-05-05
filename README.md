@@ -1,5 +1,3 @@
-# Calculator
+# ALang
 
-Jflex and CUP parser for compiler.
-
-Requires IntelliJ.
+A simple interperter developed as course project in Compiler Design Course in Asian Institute of Technology.

@@ -5,11 +5,12 @@
 } => print(c:real, d:int, f:int);
 
 
-a:int;
+a:real;
 5=>a;
 b:int;
 10=>b;
 g:int;
 11=>g;
-
-print(a,b,c);
+k:int;
+9=>k;
+print(a,b,k);

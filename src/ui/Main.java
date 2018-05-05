@@ -1,8 +1,8 @@
 package ui;
 
-import rcalc.SimpleCompiler;
-import rcalc.parsers.ParseNode;
-import rcalc.parsers.nonterminals.STARTNode;
+import alang.SimpleCompiler;
+import alang.parsers.ParseNode;
+import alang.parsers.nonterminals.STARTNode;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
