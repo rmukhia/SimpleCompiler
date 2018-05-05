@@ -1,5 +1,9 @@
-a:int;
+{
+    %% c;
+    %% d;
+    %% f;
+} => print(c:real, d:int, f:int);
 
-3 => a;
+print(10, 11, 13);
 
-1 != 1  ? { 2 => a; };
+

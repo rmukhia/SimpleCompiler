@@ -33,6 +33,7 @@ LineTerminator  = \r|\n|\r\n
 WhiteSpace      = {LineTerminator} | [ \t\f]
 int             = [0-9]+
 number          = {int}("."{int})?
+character       = \"[A-Za-z]\"
 identifier      = [A-Za-z][A-Za-z0-9]*
 logicalop       = "<" | ">" | "==" | ">=" | "<=" | "!="
 types           = "int" | "real" | "bool" | "char"
@@ -55,15 +56,21 @@ types           = "int" | "real" | "bool" | "char"
 ":"                 { return symbol(sym.DECLOP, new Token(yytext(), yyline + 1, yycolumn)); }
 ";"                 { return symbol(sym.ENDSTMT, new Token(yytext(), yyline + 1, yycolumn)); }
 "=>"                { return symbol(sym.ASSIGNOP, new Token(yytext(), yyline + 1, yycolumn)); }
-"?"                { return symbol(sym.IFOP, new Token(yytext(), yyline + 1, yycolumn)); }
-"@"                { return symbol(sym.WHILEOP, new Token(yytext(), yyline + 1, yycolumn)); }
+"?"                 { return symbol(sym.IFOP, new Token(yytext(), yyline + 1, yycolumn)); }
+"@"                 { return symbol(sym.WHILEOP, new Token(yytext(), yyline + 1, yycolumn)); }
 
+"%%"                { return symbol(sym.PRINTOP, new Token(yytext(), yyline + 1, yycolumn)); }
+","                 { return symbol(sym.SEPERATOR, new Token(yytext(), yyline + 1, yycolumn)); }
+
+{int}               { return symbol(sym.INTNUM, new Token(yytext(), yyline + 1, yycolumn)); }
+{number}            { return symbol(sym.REALNUM, new Token(yytext(), yyline + 1, yycolumn)); }
+"true"|"false"      { return symbol(sym.BOOLEAN, new Token(yytext(), yyline + 1, yycolumn)); }
+{character}         { return symbol(sym.CHAR, new Token(yytext(), yyline + 1, yycolumn)); }
 
 {logicalop}         { return symbol(sym.LOGICALOP, new Token(yytext(), yyline +1, yycolumn)); }
 // Keywords
 {types}             { return symbol(sym.TYPE, new Token(yytext(), yyline + 1, yycolumn)); }
 
-{number}            { return symbol(sym.NUMBER, new Token(yytext(), yyline + 1, yycolumn)); }
 {identifier}        { return symbol(sym.IDENTIFIER, new Token(yytext(), yyline + 1, yycolumn)); }
 
 /* Don't do anything if whitespace is found */

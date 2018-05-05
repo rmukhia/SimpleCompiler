@@ -1,12 +1,17 @@
 package rcalc.parsers;
 
-import rcalc.semantic.EvaluateExpr;
+import rcalc.semantic.Types;
 
 import java.util.LinkedList;
 
 // The base class of all nodes
 public abstract class ParseNode {
     private double val;
+    public Types type;
+    public int ival;
+    public char cval;
+    public boolean bval;
+    public double dval;
     private String lexVal;
     private LinkedList<ParseNode> children;
     private int productionId;
@@ -17,12 +22,6 @@ public abstract class ParseNode {
         if (n2 != null) children.add(n2);
         if (n3 != null) children.add(n3);
         this.lexVal = null;
-    }
-
-    public double evaluate() throws Exception {
-        double result = EvaluateExpr.evaluate(this, getProductionId());
-        setVal(result);
-        return result;
     }
 
     public void processNode() throws Exception {};
@@ -75,5 +74,11 @@ public abstract class ParseNode {
         return children.size() == 0;
     }
 
+    public Types getType() {
+        return type;
+    }
 
+    public void setType(Types type) {
+        this.type = type;
+    }
 }

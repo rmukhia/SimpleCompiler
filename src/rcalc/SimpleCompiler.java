@@ -5,6 +5,7 @@ import rcalc.parsers.Parser;
 import rcalc.parsers.ParseNode;
 import java_cup.runtime.lr_parser;
 import rcalc.semantic.SymbolTable;
+import rcalc.semantic.SymbolTableRow;
 
 import java.io.File;
 import java.io.FileReader;
@@ -13,6 +14,8 @@ import java.io.StringReader;
 public class SimpleCompiler {
     FileReader reader;
     public static SymbolTable globalSymbolTable;
+    public static SymbolTableRow currFunc = null;
+    public static int currFuncParamIndex = 0;
 
     public SimpleCompiler(FileReader reader) {
         this.reader = reader;

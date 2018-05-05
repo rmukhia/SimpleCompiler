@@ -8,26 +8,33 @@ import rcalc.parsers.terminals.MultiplyNode;
 public class STMTNode extends ParseNode {
     public STMTNode(DECLNode n1, EndStmtNode n2) {
         super(n1, n2, null);
-        setProductionId(58);
     }
 
     public STMTNode(ASSIGNNode n1, EndStmtNode n2) {
         super(n1, n2, null);
-        setProductionId(59);
     }
 
     public STMTNode(WHILENode n1, EndStmtNode n2) {
         super(n1, n2, null);
-        setProductionId(60);
     }
 
     public STMTNode(IFNode n1, EndStmtNode n2) {
         super(n1, n2, null);
-        setProductionId(61);
     }
 
     public STMTNode(IFELSENode n1, EndStmtNode n2) {
         super(n1, n2, null);
-        setProductionId(62);
+    }
+
+    public STMTNode(PRINTNode n1, EndStmtNode n2) {
+        super(n1, n2, null);
+    }
+
+    public STMTNode(FUNCNode n1, EndStmtNode n2) {
+        super(n1, n2, null);
+    }
+
+    public STMTNode(FUNCCALLNode n1, EndStmtNode n2) {
+        super(n1, n2, null);
     }
 }

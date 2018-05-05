@@ -6,17 +6,34 @@ import rcalc.parsers.terminals.IfOpNode;
 import rcalc.parsers.terminals.MultiplyNode;
 
 public class IFNode extends ParseNode {
+    public boolean ran = false;
     public IFNode(EXPRNode n1, IfOpNode n2, STMTBLOCKNode n3) {
         super(n1, n2, n3);
-        setProductionId(56);
     }
 
     @Override
     public void compute() throws Exception {
-        getChildren().get(0).compute();
-        double r = getChildren().get(0).getVal();
+        EXPRNode exprNode = (EXPRNode) getChildren().get(0);
+        exprNode.compute();
+        boolean run = false;
 
-        if (r > 0.0) {
+        switch (exprNode.getType()) {
+            case REAL:
+                run = exprNode.dval != 0.0;
+                break;
+            case BOOL:
+                run = exprNode.bval;
+                break;
+            case INT:
+                run = exprNode.ival != 0;
+                break;
+            case CHAR:
+                run = true;
+                break;
+        }
+
+        if (run) {
+            ran = true;
             getChildren().get(2).compute();
         }
     }

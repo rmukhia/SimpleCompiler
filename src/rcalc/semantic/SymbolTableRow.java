@@ -1,5 +1,11 @@
 package rcalc.semantic;
 
+import rcalc.parsers.ParseNode;
+import rcalc.parsers.nonterminals.FUNCNode;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class SymbolTableRow {
     public int ival;
     public double dval;
@@ -9,6 +15,11 @@ public class SymbolTableRow {
     public double arraydval[];
     public char arraycval[];
     public boolean arraybval[];
+
+    public FUNCNode functionNode;
+    public ArrayList<String> funcParams = new ArrayList<>();
+    public ArrayList<Types> funcTypes = new ArrayList<>();
+
 
     private Types type;
     private boolean isArray;
@@ -40,8 +51,10 @@ public class SymbolTableRow {
         this.type = type;
     }
 
-    public SymbolTableRow(SymbolTable symbolTable) {
+    public SymbolTableRow(FUNCNode funcNode) {
+        this.type = Types.FUNC;
         this.symbolTable = symbolTable;
+        functionNode = funcNode;
         isArray = false;
 
     }

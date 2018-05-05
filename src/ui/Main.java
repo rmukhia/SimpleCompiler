@@ -15,7 +15,8 @@ public class Main {
             SimpleCompiler compiler = new SimpleCompiler(reader);
             ParseNode start = compiler.parse();
             start.compute();
-            System.out.println("Hello world");
+            System.out.println("Executed");
+            // Computed
         } catch (Exception e) {
             e.printStackTrace();
         }

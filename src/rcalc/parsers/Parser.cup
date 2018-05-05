@@ -14,7 +14,7 @@ import rcalc.parsers.nonterminals.*;
 /* ------------------------------------------------------------------------------------ */
 
 terminal        Token               PLUS, MINUS, MULTIPLY, DIVIDE, EXP, LPAREN, RPAREN;
-terminal        Token               NUMBER, IDENTIFIER;
+terminal        Token               IDENTIFIER;
 terminal        Token               TYPE;
 terminal        Token               LOGICALOP;
 terminal        Token               BLOCKOPEN, BLOCKCLOSE;
@@ -23,16 +23,27 @@ terminal        Token               ASSIGNOP;
 terminal        Token               IFOP;
 terminal        Token               WHILEOP;
 terminal        Token               ENDSTMT;
+terminal        Token               PRINTOP;
+terminal        Token               SEPERATOR;
+terminal        Token               INTNUM;
+terminal        Token               REALNUM;
+terminal        Token               CHAR;
+terminal        Token               BOOLEAN;
 
 non terminal    STARTNode           START;          /* Start Node */
 non terminal    STMTBLOCKNode       STMTBLOCK;      /* Statement Block */
 non terminal    STMTLISTNode        STMTLIST;       /* Statement List */
 non terminal    STMTNode            STMT;           /* Statement */
+non terminal    FUNCCALLNode        FUNCCALL;       /* Function Call Node */
+non terminal    FUNCNode            FUNC;           /* Function Node */
 non terminal    WHILENode           WHILE;          /* While*/
 non terminal    IFELSENode          IFELSE;         /* If Else */
 non terminal    IFNode              IF;             /* If */
+non terminal    DECLLISTNode        DECLLIST;       /* Decleration list */
 non terminal    DECLNode            DECL;           /* Decleration */
 non terminal    ASSIGNNode          ASSIGN;         /* Assignment */
+non terminal    PARAMLISTNode       PARAMLIST;      /* Parameter List */
+non terminal    PARAMNode           PARAM;          /* Parameter */
 non terminal    EXPRNode            EXPR;           /* Expression */
 non terminal    ASTERMNode          ASTERM;         /* Addition Subtraction Term */
 non terminal    MDTERMNode          MDTERM;         /* Multiplication Division Term */
@@ -41,6 +52,8 @@ non terminal    FACTORNode          FACTOR;         /* Factor */
 non terminal    PTERMNode           PTERM;          /* Parenthesis term */
 non terminal    NUMNode             NUM;            /* Number */
 non terminal    IDNode              ID;             /* Identifier Node */
+
+non terminal    PRINTNode           PRINT;          /* Print */
 
 
 start with START;
@@ -68,27 +81,62 @@ STMT    ::= DECL:l ENDSTMT:m
           | IF:l ENDSTMT:m
             {: RESULT = new STMTNode(l, new EndStmtNode(m)); :}
           | IFELSE:l ENDSTMT:m
+            {: RESULT = new STMTNode(l, new EndStmtNode(m)); :}
+          | PRINT:l ENDSTMT:m
+            {: RESULT = new STMTNode(l, new EndStmtNode(m)); :}
+          | FUNC:l ENDSTMT:m
+            {: RESULT = new STMTNode(l, new EndStmtNode(m)); :}
+          | FUNCCALL:l ENDSTMT:m
             {: RESULT = new STMTNode(l, new EndStmtNode(m)); :};
 
-WHILE   ::= EXPR:l WHILEOP:m STMTBLOCK:r
-            {: RESULT = new WHILENode(l, new WhileOpNode(m), r); :};
+FUNCCALL    ::= ID:l LPAREN:m PARAMLIST:r RPAREN:rr
+                    {: RESULT = new FUNCCALLNode(l, r); :}
+              | ID:l LPAREN:m RPAREN:r
+                    {: RESULT = new FUNCCALLNode(l); :};
 
-IFELSE  ::= IF:l IFOP:m IFOP:r STMTBLOCK:rr
-            {: RESULT = new IFELSENode(l, new IfOpNode(m), new IfOpNode(r), rr); :};
+PARAMLIST   ::= PARAMLIST:l SEPERATOR:m PARAM:r
+                {: RESULT = new PARAMLISTNode(l, r); :}
+              | PARAM:l
+                {: RESULT = new PARAMLISTNode(l); :};
 
-IF      ::= EXPR:l IFOP:m STMTBLOCK:r
-            {: RESULT = new IFNode(l, new IfOpNode(m), r); :};
+PARAM       ::= EXPR:l
+                {: RESULT = new PARAMNode(l); :};
+
+FUNC        ::= STMTBLOCK:l ASSIGNOP:m ID:r LPAREN:lp DECLLIST:rr RPAREN:rp
+                    {: RESULT = new FUNCNode(l, r, rr); :}
+              | STMTBLOCK:l ASSIGNOP:m ID:r
+                    {: RESULT = new FUNCNode(l, r); :};
+
+PRINT       ::= PRINTOP:l EXPR:m
+                    {: RESULT = new PRINTNode(m); :};
+
+WHILE       ::= EXPR:l WHILEOP:m STMTBLOCK:r
+                    {: RESULT = new WHILENode(l, new WhileOpNode(m), r); :};
+
+IFELSE      ::= IF:l IFOP:m IFOP:r STMTBLOCK:rr
+                    {: RESULT = new IFELSENode(l, new IfOpNode(m), new IfOpNode(r), rr); :};
+
+IF          ::= EXPR:l IFOP:m STMTBLOCK:r
+                    {: RESULT = new IFNode(l, new IfOpNode(m), r); :};
 
 
+DECLLIST    ::= DECLLIST:l SEPERATOR:m DECL:r
+                    {: RESULT = new DECLLISTNode(l, r); :}
+              | DECL:l
+                    {: RESULT = new DECLLISTNode(l); :};
 
 /* TODO: Composite types */
-DECL    ::= ID:l DECLOP:m TYPE:r
-            {: RESULT = new DECLNode(l, new DeclOpNode(m), new TypeNode(r)); :}
-          | ID:l DECLOP:m TYPE:r NUM:rr
-            {: RESULT = new DECLNode(l, new DeclOpNode(m), new TypeNode(r), rr); :};
+DECL        ::= ID:l DECLOP:m TYPE:r
+                    {: RESULT = new DECLNode(l, new DeclOpNode(m), new TypeNode(r)); :}
+              | ID:l DECLOP:m TYPE:r NUM:rr
+                    {: RESULT = new DECLNode(l, new DeclOpNode(m), new TypeNode(r), rr); :}
+              | ID:l DECLOP:m LPAREN:r DECLLIST:rr RPAREN:rrr
+                    {: RESULT = new DECLNode(l, rr); :};
 
-ASSIGN  ::= EXPR:l ASSIGNOP:m ID:r
-            {: RESULT = new ASSIGNNode(l, new AssignOpNode(m), r); :};
+ASSIGN      ::= EXPR:l ASSIGNOP:m ID:r
+                    {: RESULT = new ASSIGNNode(l, new AssignOpNode(m), r); :};
+
+
 
 /* ------------------------------------------------------------------------------------ */
 /* Expressions                                                                          */
@@ -96,7 +144,11 @@ ASSIGN  ::= EXPR:l ASSIGNOP:m ID:r
 EXPR        ::= EXPR:l LOGICALOP:m ASTERM:r
                     {: RESULT = new EXPRNode(l, new LogicalOpNode(m), r); :}
               | ASTERM:m
-                    {: RESULT = new EXPRNode(m); :};
+                    {: RESULT = new EXPRNode(m); :}
+              | BOOLEAN:m
+                    {: RESULT = new EXPRNode(new BooleanNode(m)); :}
+              | CHAR:m
+                    {: RESULT = new EXPRNode(new CharacterNode(m)); :};
 
 ASTERM      ::= ASTERM:l PLUS:m MDTERM:r
                     {: RESULT = new ASTERMNode(l, new PlusNode(m), r); :}
@@ -129,8 +181,10 @@ FACTOR      ::=  MINUS:m FACTOR:r
 PTERM       ::= LPAREN:l ASTERM:m RPAREN:r
                     {: RESULT = new PTERMNode(new LParenNode(l), m, new RParenNode(r)); :};
 
-NUM         ::= NUMBER:l
-                    {: RESULT = new NUMNode(new NumberNode(l)); :};
+NUM         ::= REALNUM:l
+                    {: RESULT = new NUMNode(new RealNumNode(l)); :}
+              | INTNUM:l
+                    {: RESULT = new NUMNode(new IntNumNode(l)); :};
 
 ID          ::= IDENTIFIER:l
                     {: RESULT = new IDNode(new IdentifierNode(l)); :};
