@@ -18,11 +18,10 @@ public class ASSIGNNode extends ParseNode {
     @Override
     public void processNode() throws Exception {
         super.processNode();
-        double val = getChildren().get(0).getVal();
-        String id = getChildren().get(2).getLexVal();
         EXPRNode exprNode = (EXPRNode)getChildren().get(0);
+        String id = getChildren().get(2).getLexVal();
         SymbolTableRow row = SimpleCompiler.globalSymbolTable.lookup(id);
-        if (row == null) throw new Exception("Symbol not declared" + id);
+        if (row == null) throw new Exception("Symbol not declared: " + id);
 
         if (row.getType() == exprNode.getType() ||
                 (row.getType() == Types.REAL && exprNode.getType() == Types.INT)) {
@@ -33,17 +32,17 @@ public class ASSIGNNode extends ParseNode {
 
         switch (row.getType()) {
             case INT:
-                row.ival = (int) val;
+                row.ival = exprNode.ival;
                 break;
             case BOOL:
-                if (val == 0.0) row.bval = false;
-                else row.bval = true;
+                row.bval = exprNode.bval;
                 break;
             case CHAR:
-                row.cval = (char)val;
+                row.cval = exprNode.cval;
                 break;
             case REAL:
-                row.dval = val;
+                if (exprNode.getType() == Types.INT) row.dval = exprNode.ival;
+                else row.dval = exprNode.dval;
                 break;
         }
     }

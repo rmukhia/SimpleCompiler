@@ -29,6 +29,9 @@ public class FUNCCALLNode extends ParseNode {
 
         if (row == null) throw new Exception("Function " + id +"() not declared.");
 
+        if (SimpleCompiler.currFuncParamIndex != row.funcParams.size())
+            throw new Exception("Function <" + id + "> parameters and arguments do not match!");
+
         row.functionNode.call();
         SimpleCompiler.currFunc = null;
     }
